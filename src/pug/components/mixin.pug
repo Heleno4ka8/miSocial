@@ -1,0 +1,22 @@
+mixin navi-menu (items)
+    nav.navi
+        div.menu
+            span 
+        ul.top-menu
+            for item in items 
+                li 
+                    a(href=item.url) #{item.name}
+        .button 
+            a(href="#") get started
+
+mixin cards (item)  
+    figure.card 
+        figcaption
+            div.image
+                img(src=item.src + ".png" alt=item.alt)
+            h3 #{item.name}  
+            sup $  
+            p.price #{item.price}
+                i /month 
+            p #{item.description}
+            a(href=item.url) select plan   

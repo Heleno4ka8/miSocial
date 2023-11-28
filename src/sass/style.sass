@@ -1,0 +1,442 @@
+=media ($size)
+    @media screen and (max-width: #{$size}px) 
+        @content 
+html
+    font-size: 1px 
+    +media (768)  
+        font-size: 0.8px   
+    +media (475) 
+        font-size: 0.7px   
+    
+body
+    margin: 0
+.wrapper
+    max-width: 1920px
+    padding: 0 10px
+    margin: 0 auto
+header
+    padding: 50px
+    +media (768)
+        padding: 30px 10px
+    background-image: url(../img/background.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+ul
+    list-style: none
+    padding-left: 0
+
+a   
+    text-decoration: none
+
+.top
+    display: flex
+    flex-wrap: wrap
+    column-gap: 20px
+    row-gap: 10px
+    justify-content: space-between
+    +media (760)
+        justify-content: center
+.menu 
+    width: 45px
+    position: relative 
+    display: none
+    +media(1130)
+        display: inline-block
+    span 
+        display: inline-block
+        position: absolute
+        background-color: #fff 
+        border-radius: 2px
+        width: 45px
+        height: 5px
+        top: 15px
+        left: 0   
+    span:before
+        content: ""
+        display: inline-block
+        position: absolute
+        background-color: #fff 
+        border-radius: 2px
+        width: 45px
+        height: 5px
+        top: 10px
+        left: 0
+    span:after
+        content: ""
+        display: inline-block
+        position: absolute
+        border-radius: 2px
+        background-color: #fff 
+        width: 45px
+        height: 5px
+        left: 0
+        top: 20px    
+
+.navi 
+    display: flex
+    flex-wrap: wrap
+
+.logotyp 
+    p
+        display: inline-block
+        margin: 0 0 8px 10px
+        font-size: 30rem
+        letter-spacing: 6px
+        color: #fff
+        font-weight: 700
+        font-family: "Maven Pro"
+    img
+        vertical-align: bottom
+
+.top-menu 
+    display: flex
+    +media(1130)
+        display: none
+    flex-wrap: wrap
+    font-size: 16rem
+    line-height: 19px
+    font-weight: 500
+    font-family: "Maven Pro"
+    a 
+        color: #fff
+        display: inline-block
+        padding: 0 25px 13px
+        border-bottom: 2px solid transparent
+        transition: 0.7s
+        &:hover 
+            border-bottom: 2px solid #fff
+            transform: scale(1.3)
+
+.top 
+    .button
+        a
+            display: inline-block
+            min-width: 150px
+            margin: 0 0 0 35px
+            box-sizing: border-box
+            border: 1px solid #fff
+            border-radius: 25px
+            padding: 17px
+            font-size: 12rem
+            letter-spacing: 1px
+            text-transform: uppercase
+            color: #ffffff
+            font-weight: 700
+            font-family: "Maven Pro"
+            text-align: center
+            &:hover
+                background-color: #6e45e2
+                border-color: #6e45e2 
+
+.adver 
+    text-align: center
+    .marketing
+        font-size: 14rem
+        margin-top: 9vw
+        letter-spacing: 1px
+        line-height: 32px
+        text-transform: uppercase
+        color: #fff
+        font-weight: 700
+        font-family: "Maven Pro"
+    .marketing:before
+        content: ""
+        display: inline-block
+        width: 24px
+        height: 1px
+        background-color: #ffffff
+        margin: 0 10px 5px 0
+    .marketing:after
+        content: ""
+        display: inline-block
+        width: 24px
+        height: 1px
+        background-color: #ffffff
+        margin: 0 0 5px 10px   
+    h1
+        font-size: 86rem
+        letter-spacing: -3px
+        line-height: 72px
+        color: #ffffff
+        font-weight: 500
+        font-family: "Maven Pro"
+        margin: 40px 0 40px 0
+    .lorem
+        max-width: 387px
+        margin: 0 auto
+        font-size: 16rem
+        line-height: 28px
+        color: #ffffff
+        font-weight: 400
+        font-family: "Maven Pro"
+        text-transform: none
+        letter-spacing: normal
+    a 
+        display: inline-block
+        margin: 9vw 0 0 0
+        border-radius: 33px
+        filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
+        background-color: #fff
+        padding: 26px 25px 18px
+        border: 1px solid transparent
+        &:hover
+            background-color: #6e45e2
+            border: 1px solid #fff
+
+main
+    text-align: center
+    background-color: #f9fafc
+    .center
+        padding: 115px 0
+        +media(768)
+            padding: 20px 0
+        p.misocial
+            font-size: 14rem
+            display: inline-block
+            letter-spacing: 1px
+            text-transform: uppercase
+            color: #9fa4af
+            font-weight: 700
+            font-family: "Maven Pro" 
+        .misocial:before
+            content: ""
+            display: inline-block
+            width: 24px
+            height: 1px
+            background-color: #6e45e2
+            margin: 0 20px 5px 0
+        .misocial:after
+            content: ""
+            display: inline-block
+            width: 24px
+            height: 1px
+            background-color: #6e45e2
+            margin: 0 0 5px 20px
+        h2
+            font-size: 60rem
+            letter-spacing: -2px
+            margin: 15px 0
+            color: #4f4f6f
+            font-weight: 500
+            font-family: "Maven Pro"
+            text-align: center
+        .text
+            display: inline-block 
+            max-width: 428px
+            font-size: 16rem
+            line-height: 28px
+            color: #9fa4af
+            font-weight: 400
+            font-family: "Maven Pro"
+            text-align: center 
+            text-transform: none  
+    .figures  
+        display: flex 
+        flex-wrap: wrap
+        justify-content: center
+        column-gap: 50px
+        row-gap: 20px
+        padding-bottom: 120px
+        +media(768)
+            padding-bottom: 20px
+        .card 
+            box-sizing: border-box
+            margin: 0
+            max-width: 440px
+            max-height: 648px
+            border-radius: 30px
+            background-color: #ffffff
+            border: 1px solid #d7dbe8
+            padding: 67px 70px 65px
+            +media(768)
+                padding: 35px
+            transition: 0.6s
+            &:hover
+                filter: drop-shadow(0 0 46px rgba(204,204,223,0.71))
+                border: 1px solid transparent
+            .image
+                height: 110px
+            h3
+                font-size: 14rem
+                letter-spacing: 1px
+                text-transform: uppercase
+                color: #9fa4af
+                font-weight: 700
+                font-family: "Maven Pro"
+                margin: 50px 0 20px 0
+            sup 
+                font-size: 16rem
+                letter-spacing: -1px
+                color: #4f4f6f
+                font-weight: 500
+                font-family: "Maven Pro"
+                text-align: center
+                vertical-align: top
+            .price 
+                display: inline-block
+                margin: 0
+                font-size: 60rem
+                letter-spacing: -2px
+                line-height: 45px
+                color: #4f4f6f
+                font-weight: 500
+                font-family: "Maven Pro"
+                text-align: center
+            i   
+                font-size: 20rem
+                font-style: normal
+            p
+                font-size: 16rem
+                line-height: 28px
+                color: #9fa4af
+                font-weight: 400
+                font-family: "Maven Pro"
+                text-align: center
+                margin-bottom: 40px
+            a 
+                font-size: 12rem
+                display: inline-block
+                box-sizing: border-box
+                letter-spacing: 1px
+                text-transform: uppercase
+                color: #c2c9db
+                font-weight: 700
+                font-family: "Maven Pro"
+                text-align: center
+                width: 190px
+                padding: 18px
+                border-radius: 25px
+                filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
+                background-color: #ffffff
+                border: 1px solid #d7dbe8
+                transition: 0.6s
+                &:hover
+                    background-color: #6e45e2
+                    border-color: #6e45e2 
+                    color: #fff
+
+    .control-data
+        background-image: linear-gradient(-60deg, rgba(135, 211, 205, 0.4) 0%, rgba(109, 69, 225, 0.4) 100%), url(../img/map.png)
+        background-size: cover
+        background-position: center
+        padding: 170px 15px
+        .marketing 
+            font-size: 14rem
+            letter-spacing: 1px
+            text-transform: uppercase
+            color: #ffffff
+            font-weight: 700
+            font-family: "Maven Pro"
+        h3 
+            font-size: 60rem
+            letter-spacing: -2px
+            color: #ffffff
+            font-weight: 500
+            font-family: "Maven Pro"
+            text-align: center
+            margin: 20px 0
+        .button
+            a        
+                display: inline-block
+                min-width: 190px
+                margin: 5px
+                box-sizing: border-box
+                border: 1px solid #fff
+                border-radius: 25px
+                padding: 17px 
+                font-size: 12rem
+                letter-spacing: 1px
+                text-transform: uppercase
+                color: #c2c9db
+                font-weight: 700
+                font-family: "Maven Pro"
+                text-align: center
+                background-color: #fff
+                transition: 0.6s
+                &:hover
+                    background-color: #6e45e2
+                    border-color: #6e45e2 
+                    color: #fff
+footer
+    padding: 50px 50px 10px 50px
+    +media (768)
+        padding: 30px 10px 0
+    .footer-menu 
+        display: flex
+        flex-wrap: wrap
+        column-gap: 20px
+        row-gap: 10px
+        justify-content: space-between
+        padding-bottom: 10px
+        +media (610)
+            justify-content: center
+
+        .logotyp
+            p
+                color: #37374a
+        .navi
+            .menu
+                span,
+                span:before,
+                span:after
+                    background-color: #6e45e2
+            a
+                color: #6a6a77
+                &:hover 
+                    color: #756edc                
+        .button
+            a
+                display: inline-block
+                min-width: 150px
+                margin-left: 35px
+                box-sizing: border-box
+                border: 1px solid #6e45e2
+                border-radius: 25px
+                padding: 17px
+                font-size: 12rem
+                letter-spacing: 1px
+                text-transform: uppercase
+                color: #fff
+                font-weight: 700
+                font-family: "Maven Pro"
+                text-align: center
+                background-color: #6e45e2
+                transition: 0.6s
+                &:hover
+                    color: #6e45e2
+                    border: 1px solid #6e45e2
+                    background-color: #fff
+    hr
+        opacity: 0.200
+        height: 1px
+        background-color: #bdbdc2
+    .bottom
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        padding-top: 10px
+        +media (760)
+            justify-content: center
+        p
+            opacity: 0.502
+            font-size: 14rem
+            color: #6a6a77
+            font-weight: 500
+            font-family: "Maven Pro"
+            +media(364)
+                text-align: center 
+        .sprite
+            display: none
+        .social
+            a 
+                margin: 15px
+                display: inline-block       
+                svg
+                    filter: grayscale(100%)
+                    height: 20px
+                    transition: 0.6s
+                    width: 20px
+                    &:hover
+                        transform: scale(1.3)
+                        filter: grayscale(0%)
